@@ -1,0 +1,7 @@
+<p>Guess a number between 1 and 50</p>
+
+<% 1.upto(5) do |n| %>
+	<%= link_to "Guess #{n}", "/secret_number/#{n}" %><br />
+<% end %>
+<br />
+<%= image_tag "/dog.jpg" %>

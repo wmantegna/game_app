@@ -1,0 +1,8 @@
+<% if @guess == @number %>
+	<p> You're a winner! </p>
+<% else %>
+	<p> You lose </p>
+<% end %>
+
+<%= link_to "Try again", secret_number_path %>
+<br />
