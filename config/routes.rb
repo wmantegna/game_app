@@ -4,6 +4,9 @@ GameApp::Application.routes.draw do
   get "/secret_number", to: "secret_number#index"
   get "/secret_number/:id", to: "secret_number#show"
 
+  get "/rock_paper_scissor", to: "rock_paper_scissor#index"
+  get "/rock_paper_scissor/:id", to: "rock_paper_scissor#show"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,21 @@
+<% if @guess == 1 %>
+	<p> You choose <b>Rock</b>! </p>
+<% elsif @guess == 2 %>
+	<p> You choose <b>Paper</b>! </p>
+<% elsif @guess == 3 %>
+	<p> You choose <b>Scissors</b>! </p>
+<% end %>
+
+<% if @number == 1 %>
+	<p> Computer choose <b>Rock</b>! </p>
+<% elsif @number == 2 %>
+	<p> Computer choose <b>Paper</b>! </p>
+<% elsif @number == 3 %>
+	<p> Computer choose <b>Scissors</b>! </p>
+<% end %>
+
+<p>You <%= @verdict %>!</p>
+
+
+<%= link_to "Try again", rock_paper_scissor_path %>
+<br />
